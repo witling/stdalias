@@ -1,0 +1,24 @@
+#!/bin/bash
+
+shell=$(basename $SHELL)
+
+function install_fish() {
+    echo "installing into fish..."
+    path=$(realpath ~/.config/fish/functions/)
+    for cmd in $(find ./fish -regex '.*\.fish'); do
+        echo "installing $cmd..."
+        cp "$cmd" "$path"
+    done
+}
+
+case "$shell" in
+    "fish")
+    install_fish
+    ;;
+    #"bash")
+    #install_bash
+    #;;
+    *)
+    echo "shell $shell is not supported"
+    ;;
+esac
