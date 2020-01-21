@@ -2,16 +2,7 @@
 
 Bringe deine Lieblingswörter in die Shell.
 
-Installieren ist ...
-
-``` fish
-quasi apt-get install fish
-```
-
-Neustarten wird ...
-
-``` fish
-also reboot
-```
-
-lustig.
+## Beispiele
+- Installieren ist `quasi apt-get install fish`
+- Neustarten wird `also reboot`
+- Demnach ist dieses Repo `quasi lustig`
